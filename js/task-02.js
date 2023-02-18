@@ -6,3 +6,12 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+const ulRef = document.createElement('ul');
+const liListRef = ingredients.map((name) => {
+  const item = document.createElement('li');
+  item.textContent = name;
+  return item;
+});
+ulRef.append(...liListRef);
+console.log(ulRef);
+document.body.append(ulRef);
