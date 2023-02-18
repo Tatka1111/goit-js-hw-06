@@ -12,13 +12,14 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-const listElement = document.querySelector('galary');
+const listElement = document.querySelector('.galary');
 const listItemElement = images.map(image => `<li> <img src='${image.url}' alt='${image.alt}'> </li>`);
-listElement.insertAdjacentHTML("afterbegin", listElement);
-listElement.getElementsByClassName.listStyle = 'name';
+listElement.insertAdjacentHTML("afterbegin", listItemElement);
+listElement.style.listStyle = 'none';
 listElement.style.display = 'flex';
 listElement.style.justifyContent = 'center';
-const imagesElement = document.querySelectorAll('li > img');
-imagesElement[0].style.width = '300px';
-imagesElement[1].style.width = '300px';
-imagesElement[2].style.width = '350px';
+const imagesElelement = document.querySelectorAll('li > img');
+imagesElelement[0].style.width = '300px';
+imagesElelement[1].style.width = '300px';
+imagesElelement[2].style.width = '350px';
+console.log('listElement: ${listItemElement}');
