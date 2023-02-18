@@ -18,6 +18,7 @@ listElement.insertAdjacentHTML("afterbegin", listItemElement);
 listElement.style.listStyle = 'none';
 listElement.style.display = 'flex';
 listElement.style.justifyContent = 'center';
+
 const imagesElelement = document.querySelectorAll('li > img');
 imagesElelement[0].style.width = '300px';
 imagesElelement[1].style.width = '300px';
