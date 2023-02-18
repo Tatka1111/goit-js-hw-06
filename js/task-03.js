@@ -22,4 +22,3 @@ const imagesElelement = document.querySelectorAll('li > img');
 imagesElelement[0].style.width = '300px';
 imagesElelement[1].style.width = '300px';
 imagesElelement[2].style.width = '350px';
-console.log('listElement: ${listItemElement}');
